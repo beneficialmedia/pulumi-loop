@@ -15,6 +15,7 @@ export default function Home() {
             sizes="100%"
             fill
             priority
+            unoptimized
             alt="Craig"
             className="rounded-full shadow-2xl"
           />
