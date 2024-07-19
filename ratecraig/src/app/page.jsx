@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SurveyForm from "./reviews/SurveyForm";
 
 export default function Home() {
@@ -9,13 +8,20 @@ export default function Home() {
           Rate Craig
         </h3>
         <div className="h-32 w-32 sm:h-48 sm:w-48 m-auto absolute inset-x-0 top-[100px] sm:top-[150px]">
-          <Image
+          <img
             src="https://raw.githubusercontent.com/beneficialmedia/assets/main/SteamboatWillie.png"
-            sizes="100%"
-            fill
-            priority
-            alt="Craig"
             className="rounded-full shadow-2xl"
+            alt="Craig"
+            style={{
+              position: "absolute",
+              height: "100%",
+              width: "100%",
+              left: 0,
+              top: 0,
+              right: 0,
+              bottom: 0,
+              color: "transparent",
+            }}
           />
         </div>
       </header>
