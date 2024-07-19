@@ -1,14 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        remotePatterns: [
-          {
-            protocol: 'https',
-            hostname: 'raw.githubusercontent.com',
-            port: '',
-          },
-        ],
-      },
+  images: {
+    loader: 'custom',
+    loaderFile: './loader.js',
+  },
 };
 
 export default nextConfig;
