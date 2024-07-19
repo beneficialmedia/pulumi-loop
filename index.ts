@@ -3,7 +3,7 @@
 import { NextJsSite } from "./nextjs";
 
 const site = new NextJsSite("mysite", {
-    path: "demoapp",
+    path: "ratecraig",
 });
 
 export const url = site.url;
