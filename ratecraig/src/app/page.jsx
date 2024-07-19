@@ -10,7 +10,7 @@ export default function Home() {
         </h3>
         <div className="h-32 w-32 sm:h-48 sm:w-48 m-auto absolute inset-x-0 top-[100px] sm:top-[150px]">
           <Image
-            src="/SteamboatWillie.png"
+            src="https://raw.githubusercontent.com/beneficialmedia/assets/main/SteamboatWillie.png"
             sizes="100%"
             fill
             priority
