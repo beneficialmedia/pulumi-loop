@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SurveyForm from "./reviews/SurveyForm";
+import profilePic from './public/SteamboatWillie.png';
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
         </h3>
         <div className="h-32 w-32 sm:h-48 sm:w-48 m-auto absolute inset-x-0 top-[100px] sm:top-[150px]">
           <Image
-            src="/SteamboatWillie.png"
+            src={profilePic}
             sizes="100%"
             fill
             priority
