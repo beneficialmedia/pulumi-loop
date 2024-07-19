@@ -111,7 +111,7 @@ const SurveyForm = () => {
       // await addSurveyFeedback(survey.data);
     } catch (e) {
       console.log(e);
-      alert("Something went wrong!");
+      alert("Something went horribly wrong!");
     }
 
     // saveSurveyResults("https://your-web-service.com/" + SURVEY_ID, survey.data);
