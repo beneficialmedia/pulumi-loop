@@ -1,0 +1,23 @@
+name: pulumi-loop
+runtime:
+  name: nodejs
+  options:
+    packagemanager: npm
+description: A minimal AWS TypeScript Pulumi program for my loop
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-typescript
+values:
+  aws:
+    login:
+      fn::open::aws-login:
+        oidc:
+          duration: 1h
+          roleArn: arn:aws:iam::992382825829:role/beneficialmedia-pulumi-esc-oidc-role
+          sessionName: pulumi-environments-session
+  environmentVariables:
+    AWS_ACCESS_KEY_ID: ${aws.login.accessKeyId}
+    AWS_SECRET_ACCESS_KEY: ${aws.login.secretAccessKey}
+    AWS_SESSION_TOKEN: ${aws.login.sessionToken}
+    AWS_REGION: us-east-1
