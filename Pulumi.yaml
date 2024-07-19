@@ -21,10 +21,3 @@ values:
     AWS_SECRET_ACCESS_KEY: ${aws.login.secretAccessKey}
     AWS_SESSION_TOKEN: ${aws.login.sessionToken}
     AWS_REGION: us-east-1
-    NEXT_PUBLIC_FIREBASE_API_KEY: ${secrets.firebase.apiKey}
-    NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN: ${secrets.firebase.authDomain}
-    NEXT_PUBLIC_FIREBASE_PROJECT_ID: ${secrets.firebase.projectId}
-    NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET: ${secrets.firebase.storageBucket}
-    NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID: ${secrets.firebase.messagingSenderId}
-    NEXT_PUBLIC_FIREBASE_APP_ID: ${secrets.firebase.appId}
-    NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID: ${secrets.firebase.measurementId}

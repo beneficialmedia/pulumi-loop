@@ -5,7 +5,7 @@ import "survey-core/defaultV2.min.css";
 import { Model } from "survey-core";
 import { SharpLightPanelless } from "survey-core/themes/sharp-light-panelless";
 import { useCallback } from "react";
-import { addSurveyFeedback } from "../../firebase/services/institution";
+// import { addSurveyFeedback } from "../../firebase/services/institution";
 
 const surveyJson = {
   pages: [
@@ -107,7 +107,8 @@ const SurveyForm = () => {
     survey.setValue("code", "dylan");
 
     try {
-      await addSurveyFeedback(survey.data);
+      console.log(survey.data);
+      // await addSurveyFeedback(survey.data);
     } catch (e) {
       console.log(e);
       alert("Something went wrong!");
