@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+label.sd-rating__item-smiley--scale-colored:not(.sd-rating__item-smiley--selected) {
+    opacity: 1;
+}
