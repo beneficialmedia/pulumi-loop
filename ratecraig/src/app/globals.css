@@ -5,3 +5,8 @@
 label.sd-rating__item-smiley--scale-colored:not(.sd-rating__item-smiley--selected) {
     opacity: 1;
 }
+
+.profile-pic {
+    height: 182px;
+    width: 182px;
+}

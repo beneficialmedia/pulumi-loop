@@ -1,6 +1,6 @@
 import Image from "next/image";
 import SurveyForm from "./reviews/SurveyForm";
-import profilePic from './public/SteamboatWillie.png';
+import { ProfilePic } from "./reviews/ProfilePic";
 
 export default function Home() {
   return (
@@ -10,15 +10,20 @@ export default function Home() {
           Rate Craig
         </h3>
         <div className="h-32 w-32 sm:h-48 sm:w-48 m-auto absolute inset-x-0 top-[100px] sm:top-[150px]">
-          <Image
-            src={profilePic}
-            sizes="100%"
-            fill
-            priority
-            unoptimized
-            alt="Craig"
+          <div
             className="rounded-full shadow-2xl"
-          />
+            style={{
+              background: "white",
+              overflow: "hidden",
+              textAlign: "center",
+              position: "absolute",
+              height: "100%",
+              width: "100%",
+              inset: 0,
+            }}
+          >
+            <ProfilePic />
+          </div>
         </div>
       </header>
 
