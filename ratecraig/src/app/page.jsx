@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SurveyForm from "./reviews/SurveyForm";
 import { ProfilePic } from "./reviews/ProfilePic";
 
